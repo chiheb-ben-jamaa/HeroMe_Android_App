@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_home"
+    tools:context="com.app.chihebapp.androidapp.MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/weight"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_margin="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/weight_ex"
+        android:padding="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/yoga"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/yoga"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_margin="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/yoga"
+        android:padding="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/Cardio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/weight">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Cardio"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_margin="5dp"
+        android:layout_marginBottom="6dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/cardio"
+        android:padding="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yoga">
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

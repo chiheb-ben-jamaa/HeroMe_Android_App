@@ -1,0 +1,98 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/hero_bg_gradient"
+    tools:context="com.app.chihebapp.herome.Fragments.MainFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/layoutfragment">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="#253748"
+            android:minHeight="?attr/actionBarSize">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="20dp"
+                android:src="@drawable/topbannerbar" />
+
+        </android.support.v7.widget.Toolbar>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/heroes"
+            android:layout_margin="10dp"
+            android:padding="0dp" />
+
+        <Button
+            android:id="@+id/accedentbtn"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:background="@drawable/hero_button"
+            android:drawableLeft="@mipmap/lightning_icon"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="create by accedent"
+            android:textColor="#FAC740"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            />
+
+        <Button
+            android:id="@+id/geneticbtn"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/hero_button"
+            android:drawableLeft="@mipmap/atomic_icon"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="Genetic mutation"
+            android:textColor="#FAC740" />
+
+        <Button
+            android:id="@+id/bornbtn"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/hero_button"
+            android:drawableLeft="@mipmap/rocket_icon"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="Born with them"
+            android:textColor="#FAC740" />
+
+        <Button
+                android:id="@+id/choosebtn"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/hero_solid_button"
+            android:backgroundTint="#FAC740"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="CHOOSE POWERS"
+            android:textSize="22sp"
+            android:textColor="#10161D" />
+
+
+    </LinearLayout>
+
+
+</FrameLayout>
